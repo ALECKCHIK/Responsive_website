@@ -1,0 +1,166 @@
+
+/*General CSS starts*/
+* {
+    box-sizing: border-box;
+}
+body {
+ margin: 0;   
+ font-family: 'Mukta', sans-serif;
+ font-weight: 300;
+
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+a {
+    text-decoration: none;
+}
+img{
+    display:block;
+    margin: 0 auto;
+    max-width: 500px;
+    width: 96vw;
+    height: auto;
+    padding: 2rem;
+}
+
+p,
+h1,
+h2 {
+    padding: .5rem;
+    margin: .5rem;
+    text-align: center;
+    line-height: 1.5;
+}
+p {
+    font-size: 1.5rem;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+.column-1,
+.column-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+/*General CSS Ends*/
+
+/*Navigation Bar Starts*/
+.main-nav{
+    width: 100%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: rgba(250, 244, 244, .8);
+}
+.nav-bar a {
+    text-align: center;
+    display: block;
+    padding: 1rem 2rem;
+    margin: .5rem 1rem;
+    color: rgb(66, 63, 63);
+    background-color: white;
+    border: 4px solid rgba(250, 244, 244, .8);
+    border-radius: 8px;
+}
+.student-name {
+    text-align: center;
+}
+
+/*Navigation Bar Ends*/
+
+/*Banner starts*/
+.banner {
+    background-color: rgba(250, 244, 244, .8);
+}
+/*Banner Ends*/
+/*Footer Starts*/
+.last-footer {
+    display: flex;
+    padding:2rem;
+}
+.name {
+    margin-right: auto;
+}
+footer {
+    background-color: rgba(250, 244, 244, .8);
+    padding-top: 3rem;
+}
+.bottom-nav {
+    display: none;
+}
+/*Footer Ends*/
+
+/*Media querries*/
+@media screen and (min-width: 768px) {
+    /*Navigation*/
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+    .nav-bar a {
+        background-color: rgba(250, 244, 244, .8);
+        padding: 1rem 0.1rem;
+        margin: .5rem 1rem;
+    }
+    /*Banner*/
+    .banner {
+        display: flex;
+    }
+    #banner-image {
+        order:1;
+    }
+    .banner p {
+        text-align: left;
+    }
+    .bottom-nav {
+        display: inline-block;
+        flex-direction: row;
+    }
+    .bottom-nav a {
+        padding: 1rem;
+    }
+    .back-to-top {
+        display: none;
+    }
+/*Main section*/
+.main-content {
+    flex-direction: row;
+    }
+.column-1 {
+    background-color: blueviolet
+}
+.column-2 {
+    background-color: red;
+}
+}
+
+
+@media screen and (min-width: 1024px) {
+    /*Navigation*/
+    .main-nav {
+        display: flex;
+
+    }
+    .student-name {
+        padding-left: 4rem;
+        margin-right:auto;
+    }  
+    .nav-bar a {
+        padding: 1rem 0.1rem;
+        margin: .5rem 1rem 1rem 1rem;
+    }
+    .nav-bar {
+        position: relative;
+        right: 30px;
+    }
+
+    p {
+        padding-left:64px;
+    }
+}
+    
