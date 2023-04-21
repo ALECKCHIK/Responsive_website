@@ -60,12 +60,6 @@ p {
     flex-direction: column;
 }
 
-.column-1,
-.column-2 {
-    display: flex;
-    flex-direction: column;
-}
-
 /*General CSS Ends*/
 
 /*Navigation Bar Starts*/
@@ -202,16 +196,28 @@ img {
     margin-bottom: 30px;
 }
 .main-content {
-    flex-direction: row;
+    /*flex-direction: row;*/
+    /*padding: auto;*/
+    /*margin: .5rem;*/
+    /*align-items: center;
+    justify-content: space-around;*/
     }
 
 .main-content {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 0 2rem
-  }
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*display: grid;*/
+    /*gap: 1rem;*/
 
+    /*grid-template-columns: repeat(2, 1fr);*/
+    /*margin: 0 2rem*/
+  }
+  .column-1,
+  .column-2 {
+    max-width: 45vw;
+  }
+  
 }
 
 @media screen and (min-width: 1024px) {
@@ -244,14 +250,7 @@ img {
     .column-1,
     .column-2 {
         max-width: 30vw;
-
     }
 
-    .main-content {
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(3, 1fr);
-        margin: 0 2rem;
-      }
 }
     
