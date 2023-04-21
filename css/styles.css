@@ -3,24 +3,40 @@
 * {
     box-sizing: border-box;
 }
-body {
- margin: 0;   
- font-family: 'Mukta', sans-serif;
- font-weight: 300;
 
+body {
+ margin: 0px;   
+ font-family: 'Lato', sans-serif;
+ font-weight:300;
 }
+
 ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0px;
+    
 }
+
 a {
     text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
 }
-img{
-    display:block;
+
+a:hover {
+    background-color: blueviolet;
+    border-radius: 10px;
+    transition: ease-in-out .5s;
+}
+
+a:visited {
+    color: rgb(212, 92, 92);
+}
+
+img {
+    display: block;
     margin: 0 auto;
-    max-width: 500px;
-    width: 96vw;
+    max-width: 600px;
+    width: 95vw;
     height: auto;
     padding: 2rem;
 }
@@ -32,14 +48,18 @@ h2 {
     margin: .5rem;
     text-align: center;
     line-height: 1.5;
+    opacity: 0.8;
 }
+
 p {
     font-size: 1.5rem;
 }
+
 .main-content {
     display: flex;
     flex-direction: column;
 }
+
 .column-1,
 .column-2 {
     display: flex;
@@ -49,24 +69,38 @@ p {
 /*General CSS Ends*/
 
 /*Navigation Bar Starts*/
-.main-nav{
+.main-nav {
     width: 100%;
     padding-top: .5rem;
     padding-bottom: .5rem;
     background-color: rgba(250, 244, 244, .8);
 }
+
 .nav-bar a {
     text-align: center;
     display: block;
-    padding: 1rem 2rem;
+    padding: 10px;
     margin: .5rem 1rem;
     color: rgb(66, 63, 63);
     background-color: white;
     border: 4px solid rgba(250, 244, 244, .8);
     border-radius: 8px;
 }
+
+.nav-bar a:hover {
+    color: aqua;
+    background-color: blueviolet;
+    border-radius: 10px;
+    transition: ease-in-out .5s;
+}
+
 .student-name {
     text-align: center;
+}
+
+#banner-image {
+    width: 70vw;
+    height: auto;
 }
 
 /*Navigation Bar Ends*/
@@ -74,23 +108,39 @@ p {
 /*Banner starts*/
 .banner {
     background-color: rgba(250, 244, 244, .8);
+    padding-bottom: 20px;
+    margin-bottom: 50px;
 }
 /*Banner Ends*/
 /*Footer Starts*/
+
 .last-footer {
     display: flex;
     padding:2rem;
 }
+
 .name {
     margin-right: auto;
 }
+
 footer {
     background-color: rgba(250, 244, 244, .8);
     padding-top: 3rem;
 }
+
 .bottom-nav {
     display: none;
 }
+
+hr {
+    opacity: 0.3;
+}
+
+.back-to-top,
+.bottom-nav {
+    margin-top: 15px;
+}
+
 /*Footer Ends*/
 
 /*Media querries*/
@@ -100,45 +150,69 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        
     }
+
     .nav-bar a {
         background-color: rgba(250, 244, 244, .8);
-        padding: 1rem 0.1rem;
+        padding: 1rem;
         margin: .5rem 1rem;
     }
+
     /*Banner*/
     .banner {
         display: flex;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
+
     #banner-image {
         order:1;
+        max-height: 250px;
     }
+
     .banner p {
         text-align: left;
+        margin-top: 0;
+        padding: 0;
     }
+
     .bottom-nav {
         display: inline-block;
         flex-direction: row;
     }
+
     .bottom-nav a {
         padding: 1rem;
     }
+
     .back-to-top {
         display: none;
     }
 /*Main section*/
+
+img {
+    margin: 0 auto;
+    max-width: 45vw;
+    /*width: 96vw;*/
+    height: auto;
+    padding: 0rem;
+}
+
+#PORTFOLIO {
+    margin-bottom: 30px;
+}
 .main-content {
     flex-direction: row;
     }
-.column-1 {
-    background-color: blueviolet
-}
-.column-2 {
-    background-color: red;
-}
-}
 
+.main-content {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 2rem
+  }
+
+}
 
 @media screen and (min-width: 1024px) {
     /*Navigation*/
@@ -147,7 +221,7 @@ footer {
 
     }
     .student-name {
-        padding-left: 4rem;
+        padding-left: 2rem;
         margin-right:auto;
     }  
     .nav-bar a {
@@ -159,8 +233,25 @@ footer {
         right: 30px;
     }
 
-    p {
-        padding-left:64px;
+    /*Main section*/
+    img {
+        margin: 0 auto;
+        max-width: 30vw;
+        width: 96vw;
+        height: auto;
+        padding: 0rem;
     }
+    .column-1,
+    .column-2 {
+        max-width: 30vw;
+
+    }
+
+    .main-content {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 2rem;
+      }
 }
     
