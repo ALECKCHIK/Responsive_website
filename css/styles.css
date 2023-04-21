@@ -13,7 +13,6 @@ body {
 ul {
     list-style: none;
     padding: 0px;
-    
 }
 
 a {
@@ -186,38 +185,30 @@ hr {
 
 img {
     margin: 0 auto;
-    max-width: 45vw;
-    /*width: 96vw;*/
+    max-width: 46vw;
     height: auto;
-    padding: 0rem;
+    padding: 0px;
 }
 
 #PORTFOLIO {
     margin-bottom: 30px;
 }
-.main-content {
-    /*flex-direction: row;*/
-    /*padding: auto;*/
-    /*margin: .5rem;*/
-    /*align-items: center;
-    justify-content: space-around;*/
-    }
 
 .main-content {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    /*display: grid;*/
-    /*gap: 1rem;*/
-
-    /*grid-template-columns: repeat(2, 1fr);*/
-    /*margin: 0 2rem*/
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
   }
   .column-1,
   .column-2 {
-    max-width: 45vw;
+    max-width: 46vw;
+    padding: 0px;
+    margin-bottom: 30px;
+
   }
-  
 }
 
 @media screen and (min-width: 1024px) {
